@@ -25,7 +25,7 @@ const map = new maplibregl.Map({
                 attribution: "<a href='https://www.gsi.go.jp/' target='_blank'>国土地理院</a>", // 地図上に表示される属性テキスト
             },
             seamlessphoto: {
-                // シームレス写真
+                // 全国最新写真
                 type: 'raster',
                 tiles: ['https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg'],
                 tileSize: 256,
@@ -82,7 +82,7 @@ const map = new maplibregl.Map({
                 source: 'pales', // ソースのID
                 type: 'raster', // データタイプはラスターを指定
             },
-            // シームレス写真と傾斜量図のレイヤーを表示
+            // 全国最新写真と傾斜量図のレイヤーを表示
             {
                 id: 'seamlessphoto_layer',
                 source: 'seamlessphoto',
